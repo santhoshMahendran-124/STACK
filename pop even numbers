@@ -1,0 +1,26 @@
+import java.util.*;
+public class NewTest {
+
+	public static void main(String[] args) {
+			Scanner sc=new Scanner (System.in);
+			int n=sc.nextInt();
+			Stack stack=new Stack(n);
+			for(int i=0;i<n;i++)
+			{
+				int val=sc.nextInt();
+				if(val%2==0)
+				{
+					stack.push(val);
+				}
+				else
+				continue;
+			}
+			System.out.println("POP :"+stack.pop());
+			System.out.println("POP :"+stack.pop());
+			//System.out.println("POP :"+stack.pop());
+			System.out.println("PEEK :"+stack.peek());
+			System.out.println("SIZE :"+stack.size());
+			System.out.println("EMPTY :"+stack.isEmpty());                
+	}
+}
+	class Stack{
